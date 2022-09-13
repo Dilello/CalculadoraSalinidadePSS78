@@ -35,7 +35,7 @@ while True:
         if opcao == 1:
             condutividade_uScm = float(input('Entrar com valor de condutividade em microS/cm:\n>> '))
             T_C = float(input('Entrar com valor de temperatura em graus Celsius (ITPS68):\n>> '))
-            P_dBar = float(input('Entrar com valor de pressão em dBar (no caso de 1 atm = 10.1325dBar):\n>> '))
+            P_dBar = float(input('Entrar com valor de pressão em dBar (no caso de 1 atm = 10.1325 dBar):\n>> '))
             salinidade = salinidade_ppt(condutividade_uScm,T_C,P_dBar)
             format_float = "{:.2f}".format(salinidade)
             print('A salinidade é '+format_float+' ppt')
